@@ -1,71 +1,107 @@
 # iOS Dev Plugin
 
-Professional iOS development toolkit for building, debugging, and optimizing SwiftUI applications.
+Профессиональный набор инструментов для разработки iOS приложений на SwiftUI с фокусом на производительность, отладку и оптимизацию.
 
-## Features
+## Возможности
 
-**Development**
-- SwiftUI UI patterns and best practices
-- App Intents and App Shortcuts integration
-- Liquid Glass API support (iOS 26+)
+**Разработка**
+- Паттерны и лучшие практики SwiftUI
+- Интеграция App Intents и App Shortcuts
+- Поддержка Liquid Glass API (iOS 26+)
 
-**Performance**
-- SwiftUI performance auditing
-- Memory leak detection and analysis
-- ETTrace profiling for focused app flows
+**Производительность**
+- Аудит производительности SwiftUI
+- Обнаружение утечек памяти
+- ETTrace профилирование для фокусных потоков приложения
 
-**Debugging**
-- iOS simulator debugging workflows
-- Browser-based simulator mirroring
-- Hot-reload SwiftUI previews
+**Отладка**
+- Отладка iOS приложений на симуляторе
+- Зеркалирование симулятора в браузер
+- Горячая перезагрузка SwiftUI превью
 
-**Refactoring**
-- Large view decomposition
-- Code optimization guidance
-- Performance-first patterns
+**Рефакторинг**
+- Разложение больших view компонентов
+- Рекомендации по оптимизации кода
+- Паттерны с приоритетом производительности
 
-## Quick Start
+## Быстрый старт
 
 ```bash
-# Extract the plugin
+# Распакуй плагин
 tar -xzf ios-dev-plugin.tar.gz
 
-# Use in your project
+# Используй в своём проекте
 cp -r ios-dev-plugin/skills ./your-project/
 ```
 
-## Skills Included
+## Включённые Skills
 
-| Skill | Purpose |
-|-------|---------|
-| `ios-debugger-agent` | Debug iOS apps on simulators |
-| `ios-simulator-browser` | Mirror simulator in browser |
-| `ios-ettrace-performance` | Profile app performance |
-| `ios-memgraph-leaks` | Detect memory leaks |
-| `ios-app-intents` | Build App Intents workflows |
-| `swiftui-liquid-glass` | Implement Liquid Glass UI |
-| `swiftui-performance-audit` | Audit SwiftUI performance |
-| `swiftui-ui-patterns` | Apply UI best practices |
-| `swiftui-view-refactor` | Optimize view structure |
+| Skill | Назначение |
+|-------|-----------|
+| `ios-debugger-agent` | Отладка iOS приложений на симуляторе |
+| `ios-simulator-browser` | Зеркалирование симулятора в браузер |
+| `ios-ettrace-performance` | Профилирование производительности приложения |
+| `ios-memgraph-leaks` | Обнаружение утечек памяти |
+| `ios-app-intents` | Создание App Intents и App Shortcuts |
+| `swiftui-liquid-glass` | Реализация Liquid Glass UI |
+| `swiftui-performance-audit` | Аудит производительности SwiftUI |
+| `swiftui-ui-patterns` | Применение лучших практик UI |
+| `swiftui-view-refactor` | Оптимизация структуры view |
 
-## Requirements
+## Требования
 
 - Xcode 15+
 - iOS 15+
 - Swift 5.9+
 
-## Documentation
+## Документация
 
-Each skill includes detailed documentation in its `SKILL.md` file with:
-- Setup instructions
-- Usage examples
-- Best practices
-- Code templates
+Каждый skill включает подробную документацию в файле `SKILL.md` с:
+- Инструкциями по настройке
+- Примерами использования
+- Лучшими практиками
+- Шаблонами кода
 
-## License
+## Структура проекта
+
+```
+ios-dev-plugin/
+├── .codex-plugin/       # Манифест плагина
+├── .mcp.json            # Конфиг MCP
+├── skills/              # 9 профессиональных skills
+│   ├── ios-debugger-agent/
+│   ├── ios-simulator-browser/
+│   ├── ios-ettrace-performance/
+│   ├── ios-memgraph-leaks/
+│   ├── ios-app-intents/
+│   ├── swiftui-liquid-glass/
+│   ├── swiftui-performance-audit/
+│   ├── swiftui-ui-patterns/
+│   └── swiftui-view-refactor/
+├── agents/              # Метаданные агентов
+└── assets/              # Ресурсы плагина
+```
+
+## Использование
+
+1. **Клонируй репозиторий**
+   ```bash
+   git clone https://github.com/seyats/ios-dev-plugin.git
+   ```
+
+2. **Интегрируй skills в свой проект**
+   ```bash
+   cp -r ios-dev-plugin/skills ./your-ios-project/
+   ```
+
+3. **Следуй документации каждого skill**
+   - Открой `skills/[skill-name]/SKILL.md`
+   - Примени рекомендации в своём коде
+
+## Лицензия
 
 MIT
 
 ---
 
-**Built with OpenAI Codex Plugin Framework**
+**Создано на основе OpenAI Codex Plugin Framework**
